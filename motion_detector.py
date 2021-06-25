@@ -54,6 +54,7 @@ while True:
         #add the current status to status_list
         status_list.append(status)
 
+        status_list = status_list[-2:]
         #time object comes into view. Get the time and append it to times list
         if status_list[-1]==1 and status_list[-2]==0:
             times.append(datetime.now())
